@@ -4,4 +4,15 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="FluentValidation.ValidatorAttribute" Version="8.6.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sold.Services.Identity.Data\Sold.Services.Identity.Data.csproj" />
+    <ProjectReference Include="..\Sold.Services.Identity.Domain\Sold.Services.Identity.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
