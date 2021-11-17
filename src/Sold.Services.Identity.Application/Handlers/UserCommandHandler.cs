@@ -29,6 +29,8 @@ namespace Sold.Services.Identity.Application.Handlers
 
         public async Task<CreateUserCommandResult> Handle(CreateUserCommand command, CancellationToken cancellationToken)
         {
+            _validator.ValidateAndThrow(command);
+
             var user = _mapper.Map<User>(command.User);
 
             await _userRepository.AddAsync(user);

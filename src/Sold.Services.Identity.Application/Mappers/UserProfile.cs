@@ -8,7 +8,7 @@ namespace Sold.Services.Identity.Application.Mappers
     {
         public UserProfile()
         {
-            CreateMap<UserDTO, User>().ReverseMap();
+            CreateMap<User, UserDTO>().ReverseMap();
         }
     }
 }

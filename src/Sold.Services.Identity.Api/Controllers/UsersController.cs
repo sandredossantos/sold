@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Sold.Services.Identity.Api.Controllers
 {
     [ApiController]
-    [Route("[api/controller]")]
+    [Route("[controller]")]
     public class UsersController : ControllerBase
     {
         private readonly IMediator _mediator;
