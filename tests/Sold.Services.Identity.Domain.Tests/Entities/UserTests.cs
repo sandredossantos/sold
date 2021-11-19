@@ -22,7 +22,7 @@ namespace Sold.Services.Identity.Domain.Tests.Entities
         }
 
         [Fact]
-        [Trait(nameof(User), nameof(User.ChangeMail))]
+        [Trait(nameof(User), nameof(User.ChangePhone))]
         public void User_Change_Phone()
         {
             //arrange
